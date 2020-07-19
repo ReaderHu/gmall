@@ -45,11 +45,6 @@ public class RedissonController {
         jedis.set("k",Integer.parseInt(v)+1+"");
         System.out.println(v);
         jedis.close();
-
-
-
-
-
         return "success";
     }
 
