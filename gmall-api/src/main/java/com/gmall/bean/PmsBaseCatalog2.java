@@ -1,6 +1,6 @@
 package com.gmall.bean;
 
-import com.atguigu.gmall.bean.PmsBaseCatalog3;
+import com.gmall.bean.PmsBaseCatalog3;
 
 import javax.persistence.*;
 import java.io.Serializable;

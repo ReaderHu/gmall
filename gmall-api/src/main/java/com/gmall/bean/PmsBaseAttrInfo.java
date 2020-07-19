@@ -1,6 +1,5 @@
 package com.gmall.bean;
 
-import com.atguigu.gmall.bean.PmsBaseAttrValue;
 
 import javax.persistence.*;
 import java.io.Serializable;

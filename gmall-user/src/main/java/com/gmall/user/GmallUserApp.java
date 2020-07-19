@@ -1,8 +1,8 @@
 package com.gmall.user;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * ClassName GmallUserApp
@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create 2020-06-28
  */
 @SpringBootApplication
-@MapperScan
+@MapperScan(basePackages = "com.gmall.user.mapper")
 public class GmallUserApp {
 
     public static void main(String[] args) {
