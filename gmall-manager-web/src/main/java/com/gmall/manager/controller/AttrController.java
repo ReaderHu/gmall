@@ -23,8 +23,7 @@ import java.util.List;
  */
 @Controller
 @CrossOrigin
-public class
-AttrController {
+public class AttrController {
 
     @Reference
     private AttrService attrService;
