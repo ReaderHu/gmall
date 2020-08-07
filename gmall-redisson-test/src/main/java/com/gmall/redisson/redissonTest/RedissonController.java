@@ -24,10 +24,8 @@ public class RedissonController {
     @Autowired
     RedisUtil redisUtil;
 
-
     @Autowired
     RedissonClient redissonClient;
-
 
     @RequestMapping("redissontest")
     @ResponseBody
@@ -37,7 +35,6 @@ public class RedissonController {
 
         RLock lock = redissonClient.getLock("lock");
 
-
         String v = jedis.get("k");
         if(StringUtils.isBlank(v)) {
             v = "1";
@@ -45,6 +42,7 @@ public class RedissonController {
         jedis.set("k",Integer.parseInt(v)+1+"");
         System.out.println(v);
         jedis.close();
+
         return "success";
     }
 

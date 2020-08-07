@@ -28,10 +28,13 @@ public class SkuServiceImpl implements SkuService {
 
     @Autowired
     private PmsSkuInfoMapper pmsSkuInfoMapper;
+
     @Autowired
     private PmsSkuAttrValueMapper pmsSkuAttrValueMapper;
+
     @Autowired
     private PmsSkuImageMapper pmsSkuImageMapper;
+
     @Autowired
     private PmsSkuSaleAttrValueMapper pmsSkuSaleAttrValueMapper;
 

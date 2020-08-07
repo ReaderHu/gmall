@@ -43,9 +43,7 @@ public class ItemController {
         String remoteAddr = request.getRemoteAddr();
 
         // request.getHeader("");//nginx 负载均衡用这个
-
-
-        PmsSkuInfo pmsSkuInfo = skuService.getSkuById(skuId,remoteAddr);
+        PmsSkuInfo pmsSkuInfo = skuService.getSkuById(skuId, remoteAddr);
         //suk对象
         map.put("skuInfo", pmsSkuInfo);
 
@@ -86,10 +84,7 @@ public class ItemController {
             strings.add("循环测试" + i);
         }
         modelMap.put("list", strings);
-
         modelMap.put("check", "1");
-
-
         modelMap.put("hello", "hello thymeleaf");
         return "index";
     }

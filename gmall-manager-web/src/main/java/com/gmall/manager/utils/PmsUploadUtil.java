@@ -15,7 +15,7 @@ public class PmsUploadUtil {
 
 
     @Value("baseUrl")
-    private static String baseUrl = "http://192.168.0.133";
+    private static String baseUrl = "http://192.168.1.8";
 
     public static String uploadImage(MultipartFile multipartFile) {
 

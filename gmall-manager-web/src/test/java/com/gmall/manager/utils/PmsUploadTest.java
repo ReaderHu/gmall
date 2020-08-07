@@ -44,7 +44,7 @@ public class PmsUploadTest {
 
             String[] uploadInfos = storageClient.upload_file("C:\\Users\\Administrator\\Desktop\\图片\\00000.jpg", "jpg", null);
 
-            String url = "http://192.168.0.133";
+            String url = "http://192.168.1.8";
 
             for (String uploadInfo : uploadInfos) {
                 url += "/"+uploadInfo;
