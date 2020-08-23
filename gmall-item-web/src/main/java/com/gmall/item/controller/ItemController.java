@@ -55,9 +55,11 @@ public class ItemController {
         Map<String, String> skuSaleAttrHash = new HashMap<String, String>();
         List<PmsSkuInfo> pmsSkuInfos = skuService.getSkuSaleAttrValueListBySpu(pmsSkuInfo.getProductId());
 
+        // 拼接sku销售属性id值
         for (PmsSkuInfo skuInfo : pmsSkuInfos) {
 
             String k = "";
+            // 商品sku的ID
             String v = skuInfo.getId();
 
             for (PmsSkuSaleAttrValue pmsSkuSaleAttrValue : skuInfo.getSkuSaleAttrValueList()) {
@@ -76,6 +78,11 @@ public class ItemController {
     }
 
 
+    /**
+     * 页面测试
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("index")
     public String index(ModelMap modelMap) {
 
