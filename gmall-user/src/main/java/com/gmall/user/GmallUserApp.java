@@ -10,7 +10,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  *
  * @Description
  * @auther wang
- * @create 2020-06-28
+ * @create 2020-06-30
  */
 @SpringBootApplication
 @MapperScan(basePackages = "com.gmall.user.mapper")
